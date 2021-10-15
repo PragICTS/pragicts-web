@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "PragICTS",
   },
+  pathPrefix: "/pragicts-web",
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
