@@ -16,6 +16,8 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@react-hook/mouse-position": "^4.1.1",
     "gatsby": "^3.14.2",
     "gatsby-plugin-image": "^1.14.1",
     "gatsby-plugin-manifest": "^3.14.0",
