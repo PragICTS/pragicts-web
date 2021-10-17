@@ -7,6 +7,7 @@ import Loader from './loader'
 import Header from './header'
 import Navbar from './navbar'
 import { Helmet } from 'react-helmet'
+import fitText from '../utils/fitText'
 
 const Layout = ({pageTitle, children}) => {
     return (

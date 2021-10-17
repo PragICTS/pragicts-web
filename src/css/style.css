@@ -1,10 +1,7 @@
 @charset "utf-8";
 
 /*======================================
- [ -Main Stylesheet-
-  Theme: Solonick
-  Version: 1.0
-  Last change: 10/04/2018 ]
+[  ]
 ++ Fonts ++
 ++ General Style ++
 ++ Loader++
@@ -2074,6 +2071,10 @@ section.parallax-section .section-title:before {
 	position: relative;
 	z-index: 2;
 }
+.collage-image img:first-child {
+    /* height: 0 */
+    position: absolute !important
+}
 .collage-image-title {
 	position: absolute;
 	top: 80px;
@@ -2242,10 +2243,12 @@ section.parallax-section .section-title:before {
 .time-line-icon {
 	position: relative;
 }
-.time-line-icon i {
+.time-line-icon i,
+.time-line-icon svg {
 	font-size: 34px;
 }
-.time-line-icon i:after {
+.time-line-icon i:after,
+.time-line-icon svg:after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -6143,6 +6146,23 @@ section.parallax-section .section-title:before {
 .team-nav {
 	margin-top: 30px;
 }
+
+/*---------- icons-------------------------- */
+
+
+.pragicts-software-icon:before {
+    content: url(../images/icons/software.svg);
+}
+
+.pragicts-infrastructure-icon:before {
+    content: url(../images/icons/infrastructure.svg);
+}
+
+.pragicts-cloud-icon:before {
+    content: url(../images/icons/cloud.svg);
+}
+
+
 /*------404------------------------------------------------*/
 .error-wrap {
 	padding: 40px 0;
