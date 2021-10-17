@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from "react"
 import fitText from "../utils/fitText"
 import { StaticImage } from "gatsby-plugin-image"
+import OverviewImage from "../images/home/about-section-img.jpg"
 
 const HomeAbout = () => {
     const subTitle = useRef(null)
@@ -19,7 +20,7 @@ const HomeAbout = () => {
                     <div className="col-md-5">
                         <div className="collage-image fl-wrap">
                             <div className="collage-image-title" data-scrollax="properties: { translateY: '150px' }">PragICTS.</div>
-                            <StaticImage src="https://pragicts-website.s3.ap-southeast-1.amazonaws.com/home/about-section-img.jpg" className="respimg gatsby-img" alt="About PragICTS" />
+                            <img src={OverviewImage} className="respimg gatsby-img" alt="About PragICTS" />
                         </div>
                     </div>
                     <div className="col-md-7">
