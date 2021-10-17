@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import NumbersBgImage from '../images/bg/6.jpg'
 import { InView } from 'react-intersection-observer'
 
@@ -17,6 +17,7 @@ const HomeStats = () => {
     const countOfHappyCustomersRef = useRef(null)
     const countOfYearsInBusinessRef = useRef(null)
     const countOfWorkingHoursRef = useRef(null)
+    const bgRef = useRef(null)
 
     const countUp = (el, countTo, count) => {
         el.current.innerHTML = count
@@ -38,9 +39,13 @@ const HomeStats = () => {
         }
     }
 
+    useEffect(() => {
+        bgRef.current.style.backgroundImage = "url(" + bgRef.current.dataset.bg + ")"
+    }, [])
+
     return (
         <InView as="section" onChange={loadCounts} className="parallax-section dark-bg sec-half parallax-sec-half-right" data-scrollax-parent="true">
-            <div className="bg home-sec-bg par-elem"  data-bg={NumbersBgImage} data-scrollax="properties: { translateY: '30%' }"></div>
+            <div ref={bgRef} className="bg home-sec-bg par-elem"  data-bg={NumbersBgImage} data-scrollax="properties: { translateY: '30%' }"></div>
             <div className="overlay"></div>
             <div className="container">
                 <div className="section-title">

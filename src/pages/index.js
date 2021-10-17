@@ -14,14 +14,6 @@ const IndexPage = () => {
         if(subTitle) {
             fitText(subTitle.current, 1.15)
         }
-
-        let a = document.querySelectorAll(".home-sec-bg")
-
-        a.forEach(function (a) {
-            if(a.dataset.bg) {
-                a.style.backgroundImage = "url(" + a.dataset.bg + ")"
-            }
-        })
     }, [])
 
     return (
@@ -60,7 +52,7 @@ const IndexPage = () => {
                                 <div className="col-md-5">
                                     <div className="collage-image fl-wrap">
                                         <div className="collage-image-title" data-scrollax="properties: { translateY: '150px' }">PragICTS.</div>
-                                        <StaticImage src="../images/home/about-section-img.jpg" className="respimg gatsby-img" alt="" />
+                                        <StaticImage src="../images/home/about-section-img.jpg" className="respimg gatsby-img" alt="About PragICTS" />
                                     </div>
                                 </div>
                                 <div className="col-md-7">
