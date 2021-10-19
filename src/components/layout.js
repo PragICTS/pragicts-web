@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 import '../css/reset.css'
 import '../css/plugins.css'
 import '../css/style.css'
@@ -7,9 +7,15 @@ import Loader from './loader'
 import Header from './header'
 import Navbar from './navbar'
 import { Helmet } from 'react-helmet'
-import fitText from '../utils/fitText'
 
 const Layout = ({pageTitle, children}) => {
+    useEffect(() => {
+        const heightEmulatorEl = document.querySelector('.height-emulator')
+        const fixedFooterEl = document.querySelector('.fixed-footer')
+
+        heightEmulatorEl.style.height = `${fixedFooterEl.offsetHeight}px`
+    }, [])
+
     return (
         <>
             <Helmet>

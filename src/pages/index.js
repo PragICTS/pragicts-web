@@ -4,6 +4,10 @@ import Layout from "../components/layout"
 import HomeStats from "../components/home-stats"
 import HomeSolutions from "../components/home-solutions"
 import HomeAbout from "../components/home-about"
+import Footer from "../components/footer"
+import HomeVideo from "../components/home-video"
+import HomeWorkingProcess from "../components/home-working-process"
+import HomeFeaturedProjects from "../components/home-featured-projects"
 
 // markup
 const IndexPage = () => {
@@ -44,7 +48,19 @@ const IndexPage = () => {
 
                     {/* solutions  */}
                     <HomeSolutions />
+
+                    {/* video presentation */}
+                    <HomeVideo />
+
+                    {/* our working process */}
+                    <HomeWorkingProcess />
+
+                    {/* featured projects */}
+                    <HomeFeaturedProjects />
                 </div>
+
+                <div className="height-emulator fl-wrap"></div>
+                <Footer />
             </div>
         </Layout>
     )

@@ -26,7 +26,7 @@ const HomeAbout = () => {
                     <div className="col-md-7">
                         <div className="main-about fl-wrap">
                             <h5>Software | Infrastructure | Cloud</h5>
-                            <h2>Innovative solutions to<br /> <span> Expedite </span>  your business</h2>
+                            <h2> <span>Expediting </span>  Business Outcomes</h2>
                             <p>Convergence to digital creates fresh possibilities to bring about transformational change for leapfrogging business outcomes. The new norm! PragICTS is an accomplished IT services company in Sri Lanka.</p>
                             <p>We specialize in delivering bespoke IT services to the Small to Medium Business (SMB) segment. Our services include software development, provisioning, and management of IT infrastructure and cloud platforms.</p>
                             <p>We have had our share of aches, pains, and struggles along the way to get to where we are today. Our impeccable service record is a testament to our constant capacity to engineer, deliver, support, and delight our clients.</p>

@@ -3,9 +3,9 @@ import NumbersBgImage from '../images/bg/6.jpg'
 import { InView } from 'react-intersection-observer'
 
 const currentCount = {
-    countOfProjectsCompleted: 15,
-    countOfHappyCustomers: 20,
-    countOfYearsInBusiness: 50,
+    countOfProjectsCompleted: 90,
+    countOfHappyCustomers: 99,
+    countOfYearsInBusiness: 95,
     countOfWorkingHours: 100,
 }
 
@@ -61,17 +61,7 @@ const HomeStats = () => {
                                     <div className="num" ref={countOfYearsInBusinessRef}>0</div>
                                 </div>
                             </div>
-                            <h6>Years in Business</h6>
-                        </div>
-                    </div>
-                    <div className="inline-facts-wrap">
-                        <div className="inline-facts">
-                            <div className="milestone-counter">
-                                <div className="stats animaper">
-                                    <div className="num" ref={countOfHappyCustomersRef}>0</div>
-                                </div>
-                            </div>
-                            <h6>Happy Customers</h6>
+                            <h6>Customer Content</h6>
                         </div>
                     </div>
                     <div className="inline-facts-wrap">
@@ -81,7 +71,17 @@ const HomeStats = () => {
                                     <div className="num" ref={countOfProjectsCompletedRef}>0</div>
                                 </div>
                             </div>
-                            <h6>Completed Projects</h6>
+                            <h6>Customer Support</h6>
+                        </div>
+                    </div>
+                    <div className="inline-facts-wrap">
+                        <div className="inline-facts">
+                            <div className="milestone-counter">
+                                <div className="stats animaper">
+                                    <div className="num" ref={countOfHappyCustomersRef}>0</div>
+                                </div>
+                            </div>
+                            <h6>On-Time Delivery</h6>
                         </div>
                     </div>
                     <div className="inline-facts-wrap">
@@ -91,7 +91,7 @@ const HomeStats = () => {
                                     <div className="num" ref={countOfWorkingHoursRef}>0</div>
                                 </div>
                             </div>
-                            <h6>Working Hours</h6>
+                            <h6>Teamwork</h6>
                         </div>
                     </div>
                 </div>
