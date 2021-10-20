@@ -1,7 +1,6 @@
 import * as React from 'react'
 import logo from '../images/logo.png'
 import { Link } from 'gatsby'
-import toggleMenu from '../utils/toggleMenu'
 
 const Header = () => {
     return (
@@ -9,7 +8,7 @@ const Header = () => {
             <Link className="logo-holder" to="/">
                 <img src={logo}  alt="PragICTS logo" />
             </Link>
-            <div className="nav-button but-hol" onClick={toggleMenu}>
+            <div className="nav-button but-hol">
                 <span  className="nos"></span>
                 <span className="ncs"></span>
                 <span className="nbs"></span>

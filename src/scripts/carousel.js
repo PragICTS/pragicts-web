@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import slick from 'slick-carousel'
 
-const CarouselJs = () => {
+const Carousel = () => {
     const sbp = $(".sp-cont-prev")
     const sbn = $(".sp-cont-next")
     const ccsi = $(".cur_carousel-slider-container")
@@ -115,4 +115,4 @@ const CarouselJs = () => {
     }
 }
 
-export default CarouselJs
+export default Carousel

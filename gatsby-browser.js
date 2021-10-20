@@ -1,5 +1,7 @@
 import $ from 'jquery'
-import CarouselJs from './src/scripts/carousel'
+import Carousel from './src/scripts/carousel'
+import Menu from './src/scripts/menu'
+import ScrollParallax from './src/scripts/scroll-parallax'
 
 export const onRouteUpdate = () => {
     $(document).ready(function () {
@@ -68,6 +70,15 @@ export const onRouteUpdate = () => {
         });
 
         //   slick carousel ------------------
-        CarouselJs()
+        Carousel()
+
+        //   scroll parallax ------------------
+        ScrollParallax()
+
+        // share ----------------------
+        // Share()
+
+        // menu --------------------------
+        Menu()
     })
 }

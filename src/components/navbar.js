@@ -1,22 +1,13 @@
 import React from 'react'
 import logo2 from '../images/logo2.png'
 import { Link } from 'gatsby'
-import useMouse from '@react-hook/mouse-position'
-import toggleMenu from '../utils/toggleMenu'
 
 const Navbar = () => {
-    const ref = React.useRef(null)
-    const mouse = useMouse(ref)
-
-    const tooltipStyle = {
-        top: mouse.y,
-        left: mouse.x
-    }
 
     return (
         <>
-            <div ref={ref} className="nav-overlay">
-                <div style={tooltipStyle} onClick={toggleMenu} className="tooltip color-bg">Close Menu</div>
+            <div className="nav-overlay">
+                <div className="tooltip color-bg">Close Menu</div>
             </div>
             <div className="nav-holder">
                 <a className="header-logo" href="index.html">
