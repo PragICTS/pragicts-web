@@ -63,9 +63,7 @@ const HomeAbout = () => {
             </div>
             <div className="bg-parallax-module" data-position-top="90"  data-position-left="25" data-scrollax="properties: { translateY: '-250px' }"></div>
             <div className="bg-parallax-module" data-position-top="70"  data-position-left="70" data-scrollax="properties: { translateY: '150px' }"></div>
-            <div className="sec-lines">
-                <div className="container full-height"><div className="line-item"></div><div className="line-item"></div><div className="line-item"></div><div className="line-item"></div><div className="line-item"></div></div>
-            </div>
+            <div className="sec-lines"></div>
         </section>
     )
 }

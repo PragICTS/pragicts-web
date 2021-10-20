@@ -129,9 +129,7 @@ const HomeSolutions = () => {
                     </div>
                 </div>
             </div>
-            <div className="sec-lines">
-                <div className="container full-height"><div className="line-item"></div><div className="line-item"></div><div className="line-item"></div><div className="line-item"></div><div className="line-item"></div></div>
-            </div>
+            <div className="sec-lines"></div>
         </section>
     )
 }
