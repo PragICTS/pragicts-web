@@ -1,4 +1,5 @@
 import React from "react"
+import VideoThumbnailImg from '../images/home/video-thumbnail-img.jpg'
 
 const HomeVideo = () => {
     return (
@@ -7,7 +8,7 @@ const HomeVideo = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="video-box fl-wrap">
-                            <img src="http://solonick.kwst.net/site/images/all/2.jpg" className="respimg" alt="" />
+                            <img src={VideoThumbnailImg} className="respimg" alt="PragICTS YouTube" />
                             <a className="video-box-btn color-bg image-popup" href="#"><i className="fal fa-play" aria-hidden="true"></i></a>
                         </div>
                     </div>
