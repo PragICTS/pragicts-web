@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import slick from 'slick-carousel'
+import slick from './plugins/slick'
 
 const Carousel = () => {
     const sbp = $(".sp-cont-prev")
@@ -111,6 +111,34 @@ const Carousel = () => {
         fpr.on('afterChange', function (event, slick, currentSlide, nextSlide) {
             $('.slick-current-clone-animate', fpr).removeClass('slick-current-clone-animate')
             $('.slick-current-clone-animate', fpr).removeClass('slick-current-clone-animate')
+        })
+    }
+
+    if($('.text-carousel').length) {
+        $('.text-carousel').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            centerPadding: "0",
+            centerMode: true,
+            responsive: [{
+                    breakpoint: 1224,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: true,
+                    }
+                }
+            ]
+
         })
     }
 }

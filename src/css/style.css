@@ -244,6 +244,14 @@ blockquote p {
 .respimg {
 	width: 100%;
 	height: auto;
+    filter: grayscale(1);
+    transition: .5s all;
+}
+.respimg:hover {
+    filter: grayscale(0);
+}
+.slick-current .respimg {
+    filter: grayscale(0);
 }
 .bg {
 	position: absolute;
@@ -257,6 +265,11 @@ blockquote p {
 	background-position: center;
 	background-repeat: repeat;
 	background-origin: content-box;
+    filter: grayscale(1);
+    transition: .5s hover;
+}
+.bg:hover {
+    filter: grayscale(0);
 }
 .overlay {
 	position: absolute;
@@ -6339,7 +6352,7 @@ section.parallax-section .section-title:before {
 	}
 	.nav-button {
 		float: right;
-		margin-right: 140px;
+		margin-right: 24px;
 		margin-top: 24px;
 	}
 	.show-share {

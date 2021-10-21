@@ -6971,6 +6971,11 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+lightgallery@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-2.2.1.tgz#a1e40d8db0c1a1be17596db440cee466670bedd9"
+  integrity sha512-6eDdqyQsQhxHYccMxWRNsHGkY1tITFHheR89ivlyQsDPYVt2yH/fIoJpipT1pMc8bCti/Pv7X0vU0QLMdnHehg==
+
 lilconfig@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.3.tgz#68f3005e921dafbd2a2afb48379986aa6d2579fd"
@@ -9433,6 +9438,11 @@ schema-utils@^3.0.0, schema-utils@^3.1.0, schema-utils@^3.1.1:
     "@types/json-schema" "^7.0.8"
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
+
+scrolltofixed@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/scrolltofixed/-/scrolltofixed-1.0.6.tgz#2db222f1eaa178b7814ed49e64356b8025bbca25"
+  integrity sha1-LbIi8eqheLeBTtSeZDVrgCW7yiU=
 
 semver-diff@^3.1.1:
   version "3.1.1"

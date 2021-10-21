@@ -1,7 +1,15 @@
 import $ from 'jquery'
 import Carousel from './src/scripts/carousel'
+import CountTo from './src/scripts/count-to'
+import FooterAnimation from './src/scripts/footer-animation'
+// import LightGallery from './src/scripts/lightgallery'
 import Menu from './src/scripts/menu'
+import ParallaxThumbnails from './src/scripts/parallax-thumbnails'
 import ScrollParallax from './src/scripts/scroll-parallax'
+import ScrollTo from './src/scripts/scroll-to'
+import ScrollToFixed from './src/scripts/scroll-to-fixed'
+// import Share from './src/scripts/share'
+require('./src/scripts/plugins/smoothscroll')
 
 export const onRouteUpdate = () => {
     $(document).ready(function () {
@@ -80,5 +88,23 @@ export const onRouteUpdate = () => {
 
         // menu --------------------------
         Menu()
+
+        // count to -------------
+        CountTo()
+
+        // scroll to -----------------
+        ScrollTo()
+
+        // footer animations --------------
+        FooterAnimation()
+
+        // parallax thumbnails --------------
+        ParallaxThumbnails()
+
+        // scrollToFixed --------------
+        ScrollToFixed()
+
+        // lightgallery --------------
+        // LightGallery()
     })
 }

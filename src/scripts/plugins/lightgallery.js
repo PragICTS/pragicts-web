@@ -1,3 +1,4 @@
+import jQuery from 'jquery'
 /*! lightgallery - v1.3.1
 * http://sachinchoolur.github.io/lightGallery/
 * Copyright (c) 2019 Sachin N; Licensed Apache 2.0 */

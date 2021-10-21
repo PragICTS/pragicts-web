@@ -1,18 +1,10 @@
 import React, {useEffect, useRef} from "react"
-import fitText from "../utils/fitText"
 
 const HomeWorkingProcess = () => {
-    const subTitle = useRef(null)
-
-    useEffect(() => {
-        if(subTitle) {
-            fitText(subTitle.current, 1.15)
-        }
-    }, [])
 
     return (
-        <section  data-scrollax-parent="true">
-            <div ref={subTitle} className="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }"><span>//</span>How We Engage</div>
+        <section id="process" data-scrollax-parent="true">
+            <div className="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }"><span>//</span>How We Engage</div>
             <div className="container">
                 <div className="section-title fl-wrap">
                     <h3>How We Engage</h3>

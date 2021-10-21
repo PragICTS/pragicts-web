@@ -33,6 +33,15 @@ const hideMenu = (nbw, nhw, nho) => {
     nho.fadeOut(500)
 }
 
+const hideShare = () => {
+    const shrcn = $(".share-wrapper")
+    const ssb = $(".showshare")
+
+    shrcn.fadeOut(400).addClass("isShare").removeClass("invis-share")
+    $(".soa").removeClass("soavis")
+    ssb.removeClass("clshbt")
+}
+
 const Menu = () => {
 
     const nbw = $(".nav-button")
@@ -43,6 +52,7 @@ const Menu = () => {
     $(".sliding-menu li a.nav").parent("li").addClass("submen-dec")
 
     nbw.on("click", function () {
+        hideShare()
         if (nbw.hasClass("but-hol")) showMenu(nbw, nhw, nho)
         else hideMenu(nbw, nhw, nho)
         return false

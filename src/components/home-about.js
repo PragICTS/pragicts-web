@@ -1,26 +1,17 @@
-import React, {useEffect, useRef} from "react"
-import fitText from "../utils/fitText"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
 import OverviewImage from "../images/home/about-section-img.jpg"
 
 const HomeAbout = () => {
-    const subTitle = useRef(null)
-
-    useEffect(() => {
-        if(subTitle) {
-            fitText(subTitle.current, 1.15)
-        }
-    }, [])
 
     return (
-        <section data-scrollax-parent="true" id="sec2">
-            <div ref={subTitle} className="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }" > <span>//</span>About PragICTS</div>
-            <div className="container">
+        <section data-scrollax-parent="true" id="overview">
+            <div className="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }" > <span>//</span>Words About  </div>
+                <div className="container">
                 <div className="row">
                     <div className="col-md-5">
                         <div className="collage-image fl-wrap">
                             <div className="collage-image-title" data-scrollax="properties: { translateY: '150px' }">PragICTS.</div>
-                            <img src={OverviewImage} className="respimg gatsby-img" alt="About PragICTS" />
+                            <img src={OverviewImage} className="respimg" alt="About PragICTS" />
                         </div>
                     </div>
                     <div className="col-md-7">
