@@ -9,7 +9,7 @@ const HomeVideo = () => {
                     <div className="col-md-6">
                         <div className="video-box fl-wrap">
                             <img src={VideoThumbnailImg} className="respimg" alt="PragICTS YouTube" />
-                            <a className="video-box-btn color-bg image-popup" href="#"><i className="fal fa-play" aria-hidden="true"></i></a>
+                            <a className="video-box-btn color-bg image-popup" href="https://www.youtube.com/watch?v=IUQb5nftrF4"><i className="fal fa-play" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div className="col-md-6">

@@ -1,5 +1,7 @@
 import $ from 'jquery'
-import lightGallery from './plugins/lightgallery'
+import lightGallery from './plugins/lightgallery/lightgallery'
+require('./plugins/lightgallery/lg-zoom')
+require('./plugins/lightgallery/lg-video')
 
 const LightGallery = () => {
     function lightGalleryInit() {

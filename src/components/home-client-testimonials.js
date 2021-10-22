@@ -113,7 +113,7 @@ const HomeClientTestimonials = () => {
                 <div className="container">
                     <ul className="client-list client-list-white">
                         {clients.map(client => (
-                            <li><a href={client.url} target="_blank"><img src={client.logo} className='respimg' alt={client.name} /></a></li>
+                            <li key={client.name}><a href={client.url} target="_blank"><img src={client.logo} className='respimg' alt={client.name} /></a></li>
                         ))}
                     </ul>
                 </div>

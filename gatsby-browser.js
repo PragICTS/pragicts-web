@@ -2,7 +2,7 @@ import $ from 'jquery'
 import Carousel from './src/scripts/carousel'
 import CountTo from './src/scripts/count-to'
 import FooterAnimation from './src/scripts/footer-animation'
-// import LightGallery from './src/scripts/lightgallery'
+import LightGallery from './src/scripts/lightgallery'
 import Menu from './src/scripts/menu'
 import ParallaxThumbnails from './src/scripts/parallax-thumbnails'
 import ScrollParallax from './src/scripts/scroll-parallax'
@@ -105,6 +105,6 @@ export const onRouteUpdate = () => {
         ScrollToFixed()
 
         // lightgallery --------------
-        // LightGallery()
+        LightGallery()
     })
 }
