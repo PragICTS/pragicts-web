@@ -6850,3 +6850,8 @@ section.parallax-section .section-title:before {
 		background-position: center;
 	}
 }
+
+
+.gatsby-image-wrapper {
+    z-index: 2;
+}

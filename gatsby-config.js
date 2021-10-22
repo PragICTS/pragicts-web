@@ -24,6 +24,12 @@ module.exports = {
             },
             __key: "images",
         },
-        "gatsby-plugin-scroll-reveal"
+        "gatsby-plugin-scroll-reveal",
+        {
+            resolve: `gatsby-plugin-s3`,
+            options: {
+                bucketName: "pragicts-web",
+            },
+        },
     ],
 };

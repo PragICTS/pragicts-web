@@ -1,5 +1,6 @@
 import React from "react"
 import OverviewImage from "../images/home/about-section-img.jpg"
+import { StaticImage } from "gatsby-plugin-image"
 
 const HomeAbout = () => {
 
@@ -11,7 +12,7 @@ const HomeAbout = () => {
                     <div className="col-md-5">
                         <div className="collage-image fl-wrap">
                             <div className="collage-image-title" data-scrollax="properties: { translateY: '150px' }">PragICTS.</div>
-                            <img src={OverviewImage} className="respimg" alt="About PragICTS" />
+                            <StaticImage src="../images/home/about-section-img.jpg" className="respimg" alt="About PragICTS"></StaticImage>
                         </div>
                     </div>
                     <div className="col-md-7">
