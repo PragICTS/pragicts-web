@@ -1,0 +1,7 @@
+/*! lg-zoom - v1.0.4 - 2016-12-20
+* http://sachinchoolur.github.io/lightGallery
+* Copyright (c) 2016 Sachin N; Licensed GPLv3 */
+
+/*! lightgallery - v1.3.1
+* http://sachinchoolur.github.io/lightGallery/
+* Copyright (c) 2019 Sachin N; Licensed Apache 2.0 */
